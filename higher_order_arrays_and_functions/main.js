@@ -12,30 +12,32 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-//The good old for loop
+/*
+
+ //  The good old for loop
 for (let i = 0; i < companies.length; i++) {
-  //console.log(companies[i]);
+  console.log(companies[i]);
 }
 
-//The forEach loop
+//  The forEach loop
 companies.forEach(function (company){
-  //console.log(company.name);
+  console.log(company.name);
 });
+*/
 
 //filter with for loop
-
 let canDrink = [];
-for(let i = 0; i < ages.length; i++)
-{
-  if(ages[i] >= 21)
-  {
-    canDrink.push(ages[i]);
-  }
-}
+// for(let i = 0; i < ages.length; i++)
+// {
+//   if(ages[i] >= 21)
+//   {
+//     canDrink.push(ages[i]);
+//   }
+// } 
+
+
+const canDrink = 
 
 console.log(canDrink);
-
-
-
 
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
