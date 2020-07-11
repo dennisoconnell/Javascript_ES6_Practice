@@ -68,6 +68,15 @@ companies.forEach(function (company){
 // const tenYearCompanies = companies.filter(company => (company.end - company.start >= 10));
 // console.log(tenYearCompanies);
 
+//map
+//create array of company names, old fashioned way without arrow functions
+// const companyNames = companies.map(function(company){
+//   return company.name;
+// });
 
+//create an array of company names using arrow functions
+const companyNames = companies.map(company => company.name);
 
+const testMap = 
+console.log(companyNames);
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
