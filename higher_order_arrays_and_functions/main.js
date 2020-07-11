@@ -25,8 +25,8 @@ companies.forEach(function (company){
 });
 */
 
-//filter with for loop
-let canDrink = [];
+//filter with for loop to find all those who are 21 or older
+//let canDrink = [];
 // for(let i = 0; i < ages.length; i++)
 // {
 //   if(ages[i] >= 21)
@@ -35,9 +35,31 @@ let canDrink = [];
 //   }
 // } 
 
+//filter again with javascript array filter function
+// const canDrink = ages.filter(function (age) {
+//   if (age >= 21) {
+//     return true;
+//   }
+// });
 
-const canDrink = 
+//filter with arrow function. So elegant!
+//const canDrink = ages.filter(age => age >=21);
 
-console.log(canDrink);
+
+//console.log(canDrink);
+
+
+//Filter the retail companies with javascript filter function
+// const retailCompanies = companies.filter(function(company){
+//   if(company.category === 'Retail'){
+//     return true;
+//   }
+// });
+
+//same filtering of retail companies but this time with the arrow function
+// const retailCompanies = companies.filter(company => company.category === 'Retail');
+// console.log(retailCompanies);
+
+
 
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
