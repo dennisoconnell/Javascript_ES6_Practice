@@ -60,6 +60,14 @@ companies.forEach(function (company){
 // const retailCompanies = companies.filter(company => company.category === 'Retail');
 // console.log(retailCompanies);
 
+//Get all companies founded in the 80's
+//const eightiesCompanies = companies.filter((company) => (company.start >= 1980 && company.start <= 1989));
+//console.log(eightiesCompanies)
+
+//Filter all companies that lasted at least 10 years
+// const tenYearCompanies = companies.filter(company => (company.end - company.start >= 10));
+// console.log(tenYearCompanies);
+
 
 
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
