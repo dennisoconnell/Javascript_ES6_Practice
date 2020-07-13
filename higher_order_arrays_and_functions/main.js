@@ -77,6 +77,10 @@ companies.forEach(function (company){
 //create an array of company names using arrow functions
 const companyNames = companies.map(company => company.name);
 
-const testMap = 
+//testMap to play with what else can be done
+const testMap = companies.map(company => 1);
+
+const testMap2 = companies.map(company => 2);
+
 console.log(companyNames);
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
