@@ -82,5 +82,7 @@ const testMap = companies.map(company => 1);
 
 const testMap2 = companies.map(company => 2);
 
+const testMap3 = companies.map( company => 3);
+
 console.log(companyNames);
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
