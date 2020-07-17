@@ -80,9 +80,48 @@ const companyNames = companies.map(company => company.name);
 //testMap to play with what else can be done
 const testMap = companies.map(company => 1);
 
-const testMap2 = companies.map(company => 2);
+//testMap2 uses template literals to print out the company name with its start and end dates
+const testMap2 = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
 
-const testMap3 = companies.map( company => 3);
+//created a map with the square root of all the ages of the companies
+const agesSqaureRoot = ages.map(age => Math.sqrt(age));
 
-console.log(companyNames);
+//to do two operations just do two maps as in .map().map();
+const agesSquareRootThenTimesTwo = ages
+  .map(age => Math.sqrt(age))
+  .map(age => age * 2);
+
+//console.log(agesSquareRootThenTimesTwo);
+
+
+//using javascript sort function to create a new array of companies that are sorted by smallest age to largest age
+// const sortedCompanies = companies.sort(function (company1, company2) {
+//   if (company1.start > company2.start) {
+//     return 1;
+//   }
+//   else{
+//     return -1;
+//   }
+// })
+
+//same example but using javascript arrow functions to condense code.
+//this method turned out to have more complicated steps because it required the use of ternary operators. 
+//Syntax explanation: condition ? exprIfTrue : exprIfFalse
+// const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1 : -1));
+
+// console.log(sortedCompanies);
+
+//now sort ages
+// const sortAges = ages.sort();
+//this doesn't work because it only sorts the first digit
+
+//corrected version of sort Ages using method from prior example 
+// a-b implies sorting by ascending order. could also do b-a to sort by descending order.
+// const sortAges = companies.sort((a,b) => a - b);
+
+// console.log(sortAges);
+
+
+
+
 //These practice exercises came from this video: https://www.youtube.com/watch?v=rRgD1yVwIvE
